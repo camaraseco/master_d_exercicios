@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+
+header {
+    background-color: rgba(60, 60, 60, 0.879);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: "New Rocker", system-ui;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+
+nav {
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center; 
+}
+
+ul {
+    display: none; 
+    list-style-type: none;  
+
+}
+
+
+.itens {
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    margin: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.itens:hover  {
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+
+nav:hover ul { 
+    display: block;
+       
+}
+
+
+h2 {
+    text-align: center;
+    font-family: "New Rocker", system-ui;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+section {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+
+
+#discos {
+    padding: 5px;
+    background-color: lightgray;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dis {
+    flex: auto;
+}
+
+
+#tours {
+    padding: 5px;
+    margin: 8px;
+    background-color: lightgrey;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tou {
+    flex: auto;
+}
+
+
+section > i > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    
+}
+
+aside {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(119, 136, 153, 0.784);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px black;
+}
+
+aside > h3 {
+    text-align: center;
+}
+
+aside > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 15px;
+    
+}
+
+footer {
+    background-color: rgb(248, 237, 237);
+    padding: 10px;
+}
+
+footer > h2 {
+    text-align: center;
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    
+}
+
+#contatos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.cont {
+    flex: 1 1 100%;
+    padding: 10px;
+}
+
+
+@media (min-width: 650px) {
+
+    
+
+    ul {
+        display: flex; 
+        list-style-type: none;  
+        flex-flow: row wrap;
+        justify-content: space-evenly;   
+    }
+
+    nav:hover ul { 
+        display: flex;
+    }
+
+    nav > .material-symbols-outlined{
+        display: none;
+    }
+
+    .itens {
+        background-color: lightgray;
+        color: black;
+    }
+
+    section {
+        padding: 25px;
+        margin: auto;
+    }
+
+    
+
+}
+
+
