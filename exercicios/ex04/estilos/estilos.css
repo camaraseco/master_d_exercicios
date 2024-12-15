@@ -17,17 +17,34 @@ html, body {
 header {
     background-color: #085cb4e6;
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 5px;
+    text-align: center; /* Coloqui center em vez de start por opção */
     display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 70%;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;  
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    height: 150px;
     background-color: black;
     color: white;
     border-radius: 5px;
-    flex: auto;
-    margin: solid 1px white;
+    border: solid 1px white;
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+main {
+    background-color: rgb(175, 171, 171);
+    margin: 10px 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
