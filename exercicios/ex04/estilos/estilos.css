@@ -92,9 +92,20 @@ footer {
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center;
+        height: 25%;
     }
     aside {
         flex-basis: 20%;
     }
-    
+
+    section {
+        height: 12%;
+    }
+
+    section > ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
